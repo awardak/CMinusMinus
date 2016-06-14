@@ -1,0 +1,54 @@
+Program Start
+Chance #1 - guess a number (1-35): 5
+  guess higher
+Chance #2 - guess a number (1-35): 25
+  guess lower
+Chance #3 - guess a number (1-35): 23
+  YOU WIN!!!
+continue (y/n) ? y
+
+Chance #1 - guess a number (1-35): 20
+  guess higher
+Chance #2 - guess a number (1-35): 25
+  guess higher
+Chance #3 - guess a number (1-35): 35
+  YOU WIN!!!
+continue (y/n) ? y
+
+Chance #1 - guess a number (1-35): 25
+  guess lower
+Chance #2 - guess a number (1-35): 15
+  guess lower
+Chance #3 - guess a number (1-35): 5
+  guess higher
+Sorry, you lost.
+
+continue (y/n) ? y
+
+Chance #1 - guess a number (1-35): 20
+  guess lower
+Chance #2 - guess a number (1-35): 15
+  YOU WIN!!!
+continue (y/n) ? y
+
+Chance #1 - guess a number (1-35): 20
+  guess lower
+Chance #2 - guess a number (1-35): 10
+  guess higher
+Chance #3 - guess a number (1-35): 15
+  guess higher
+Sorry, you lost.
+
+continue (y/n) ? y
+
+Chance #1 - guess a number (1-35): 20
+  guess lower
+Chance #2 - guess a number (1-35): 18
+  guess lower
+Chance #3 - guess a number (1-35): 17
+  guess lower
+Sorry, you lost.
+
+continue (y/n) ? n
+
+Program End

@@ -1,0 +1,35 @@
+Program Start
+Please enter 4 values: 
+40
+30
+20
+10
+Sum of all: 100
+Diff of first - second: 10
+Product of all: 240000
+quotient (first/last): 4
+
+Enter a simple expression: 10
++20
+Result: 30
+
+continue (y/n) ? y
+
+Enter a simple expression: 15
++20
+Result: 35
+
+continue (y/n) ? y
+
+Enter a simple expression: 36
+/3
+Result: 12
+
+continue (y/n) ? y
+
+Enter a simple expression: 11
+*12
+Result: 132
+
+continue (y/n) ? n
+Program End

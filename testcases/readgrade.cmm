@@ -1,0 +1,26 @@
+/* Small app to convert numeric grade to letter grade */
+
+int main() {
+    int input;
+
+    input = 999;
+    while (input < 0 || input > 100) {
+        cout << "Please enter a number 0-100: ";
+        cin >> input;
+    }
+
+    cout << "If this was a grade, you would receive: ";
+    
+    if (input > 89)
+        cout << "A";
+    else if (input > 79)
+        cout << "B";
+    else if (input > 69)
+        cout << "C";
+    else if (input > 59)
+        cout << "D";
+    else
+        cout << "F";
+
+    cout << endl;
+}

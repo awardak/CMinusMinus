@@ -1,0 +1,57 @@
+/* Test expressions */
+
+int main() {
+    if (0)
+        cout << "FAIL" << endl;
+
+    if (1)
+        cout << "SUCCESS" << endl;
+
+    if (0 && 1 && 2 < 3)
+        cout << "FAIL" << endl;
+    else
+        cout << "SUCCESS" << endl;
+
+    if (1 && 2 && 3 && 4 && 5 && 6)
+        cout << "SUCCESS" << endl;
+    else
+        cout << "FAIL" << endl;
+
+    if (0 || 0 || 0 || 22 > 33 || 22 == 33)
+        cout << "FAIL" << endl;
+    else
+        cout << "SUCCESS" << endl;
+
+    if ( (1 < 2) && (55 > 30) && (22 == 22) ||
+         (100 > 200)
+       )
+        cout << "SUCCESS" << endl;
+    else
+        cout << "FAIL" << endl;
+
+    char tab;
+    tab = 9;
+    
+    int x;
+
+    x = 5 - 3 - 2;
+    cout << "should be 0:  " << tab << x << endl;
+
+    x = 5 - 3 + 2;
+    cout << "should be 4:  " << tab << x << endl;
+    
+    x = 5 - 3 * 5;
+    cout << "should be -10:" << tab << x << endl;
+
+    x = (5 - 3) * 5;
+    cout << "should be 10: " << tab << x << endl;
+
+    x = 30 / 5 / 2;
+    cout << "should be 3:  " << tab << x << endl;
+
+    x = 30 / 5 * 2;
+    cout << "should be 12: " << tab << x << endl;
+
+    x = 30 / (5 * 2);
+    cout << "should be 3:  " << tab << x << endl;
+}

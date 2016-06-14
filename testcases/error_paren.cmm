@@ -1,0 +1,20 @@
+
+/*
+ * missing parentheses
+ */
+
+int main() 
+{
+    int x;
+    x = 21;
+
+    if (1) {
+        while (x < 20 {
+            x = x + 1;
+        }
+
+        x = 0;
+        x = x * x;
+    }
+    cout << x << endl;
+}

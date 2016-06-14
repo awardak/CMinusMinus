@@ -1,0 +1,14 @@
+Program Start
+SUCCESS
+SUCCESS
+SUCCESS
+SUCCESS
+SUCCESS
+should be 0:  	0
+should be 4:  	4
+should be -10:	-10
+should be 10: 	10
+should be 3:  	3
+should be 12: 	12
+should be 3:  	3
+Program End

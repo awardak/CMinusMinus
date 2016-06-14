@@ -1,0 +1,4 @@
+user$ ./cmm testcases/error_dbl_decl.cmm 
+symbol already exists: x
+around lineno: 9
+user$

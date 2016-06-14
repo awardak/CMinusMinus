@@ -1,0 +1,63 @@
+/*
+ * 1. Assign values to 4 integers and display one sum, product,
+ * quotient, subtraction. 
+ *
+ * 2. Make a small calculator app.
+ */
+
+int main() {
+    int a;
+    int A;
+    int b1;
+    int B1;
+
+    cout << "Please enter 4 values: " << endl;
+    cin >> a >> A >> b1 >> B1;
+
+    int sum;
+    sum = a + A + b1 + B1;
+    cout << "Sum of all: " << sum << endl;
+
+    int diff;
+    diff = a - A;
+    cout << "Diff of first - second: " << diff << endl;
+
+    int prod;
+    prod = a * A * b1 * B1;
+    cout << "Product of all: " << prod << endl;
+
+    int quotient;
+    quotient = a / B1;
+    cout << "quotient (first/last): " << quotient << endl;
+
+    int x;
+    int y;
+    char op;
+    char input;
+    input = 121;                    /* ascii 121 is 'y' */
+
+    while (input == 121) {
+
+        cout << endl << "Enter a simple expression: ";
+        cin >> x >> op >> y;
+
+        if (op == 43) {             /* ascii 43 is '+' */
+            x = x + y;
+            cout << "Result: " << x << endl << endl;
+        } else if (op == 45) {
+            x = x - y;
+            cout << "Result: " << x << endl << endl;
+        } else if (op == 42) {
+            x = x * y;
+            cout << "Result: " << x << endl << endl;
+        } else if (op == 47) {
+            x = x / y;
+            cout << "Result: " << x << endl << endl;
+        } else
+            cout << "That operation is not recognized." << endl << endl;
+    
+        cout << "continue (y/n) ? ";
+        cin >> input;
+        cout << endl;
+    }
+}

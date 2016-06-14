@@ -1,0 +1,4 @@
+user$ ./cmm testcases/error_semicolon.cmm 
+syntax error
+around line: 11
+user$

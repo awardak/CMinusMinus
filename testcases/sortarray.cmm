@@ -1,0 +1,54 @@
+/*
+ * Allows user to enter a list of numbers and then sorts the list
+ * using selection sort 
+ */
+int main() {
+    int nums[20];
+    int size;
+    char tab;
+    char space;
+    int i;
+
+    size = 20;
+    tab = 9;        /* the tab character */
+    space = 32;     /* the space character */
+    i = 0;
+
+    cout << "Enter 10 numbers to sort:" << endl;
+    while (i < size) {
+       cout << i << ":" << tab;
+       cin >> nums[i];
+       i = i + 1;
+    }
+
+    /* selection sort */
+    int smallest;
+    int temp;
+    int j;
+    i = 0;
+    while (i < size) {
+        smallest = i;
+        j = i + 1;
+        while (j < size) {
+            if (nums[j] < nums[smallest]) {
+                smallest = j;
+            }
+            j = j + 1;
+        }
+
+        temp = nums[i];
+        nums[i] = nums[smallest];
+        nums[smallest] = temp;
+
+        i = i + 1;
+    }
+
+    cout << "Sorted: ";
+    i = 0;
+    while (i < size) {
+        cout << nums[i] << space;
+        i = i + 1;
+    }
+    cout << endl;
+
+}

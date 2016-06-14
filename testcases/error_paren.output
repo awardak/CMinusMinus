@@ -1,0 +1,4 @@
+user$ ./cmm testcases/error_paren.cmm 
+syntax error
+around line: 12
+user$

@@ -1,0 +1,71 @@
+/* Guessing Game.
+ *
+ * Gives user 3 chances at guessing a number.
+ */
+int main() {
+    int numbers[20];
+
+    numbers[0] = 23;
+    numbers[1] = 35;
+    numbers[2] = 12;
+    numbers[3] = 15;
+    numbers[4] = 19;
+    numbers[5] = 11;
+    numbers[6] = 5;
+    numbers[7] = 9;
+    numbers[8] = 22;
+    numbers[9] = 4;
+    numbers[10] = 14;
+    numbers[11] = 16;
+    numbers[12] = 21;
+    numbers[13] = 13;
+    numbers[14] = 10;
+    numbers[15] = 8;
+    numbers[16] = 19;
+    numbers[17] = 20;
+    numbers[18] = 3;
+    numbers[19] = 28;
+
+    int size;
+    int chance;
+    int guess;
+    int won;
+    char cont;
+    int i;
+
+    i = 0;
+    size = 20;
+    cont = 121;                         /* ascii 121 is 'y' */
+
+    while (cont == 121) {
+        chance = 1;
+        guess = 0;
+        won = 0;
+        while (chance < 4 && (guess < numbers[i] || guess > numbers[i])) {
+            cout << "Chance #" << chance << " - guess a number (1-35): ";
+            cin >> guess;
+
+            if (guess == numbers[i]) {
+                cout << "  YOU WIN!!!" << endl;
+                won = 1;
+            } else if (guess < numbers[i]) {
+                cout << "  guess higher" << endl;
+            } else if (guess > numbers[i]) {
+                cout << "  guess lower" << endl;
+            }
+
+            chance = chance + 1;
+        }
+
+        if (won == 0)
+            cout << "Sorry, you lost." << endl << endl;
+
+        cout << "continue (y/n) ? ";
+        cin >> cont;
+        cout << endl << endl;
+        
+        i = i + 1;
+        if (i > size)
+            i = 0;
+    }
+}
