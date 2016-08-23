@@ -14,7 +14,7 @@ int main() {
     space = 32;     /* the space character */
     i = 0;
 
-    cout << "Enter 10 numbers to sort:" << endl;
+    cout << "Enter numbers to sort:" << endl;
     while (i < size) {
        cout << i << ":" << tab;
        cin >> nums[i];
